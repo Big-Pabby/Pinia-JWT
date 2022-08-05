@@ -45,6 +45,7 @@ export default {
       async onLogin() {
             const res = await fetch('https://obscure-wave-22966.herokuapp.com/login', {
                 method: 'post',
+                mode: 'no-cors',
                 headers: {'Content-Type': 'application/json'},
                 credentials: 'include',
                 body: JSON.stringify({
