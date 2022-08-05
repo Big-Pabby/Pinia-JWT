@@ -12,8 +12,9 @@ import { userData } from '../stores/userStore';
 export default {
   setup(props) {
     onMounted( async () => {
-      const res = await fetch('http://localhost:3001/user', {
+      const res = await fetch('https://obscure-wave-22966.herokuapp.com/user', {
           headers: {'Content-Type': 'application/json'},
+          mode: 'cors',
           credentials: 'include',
       });
 

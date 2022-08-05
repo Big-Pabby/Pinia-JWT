@@ -56,6 +56,7 @@ export default {
             if(this.inputPassword === this.confirmPassword) {
                 const res = await fetch('https://obscure-wave-22966.herokuapp.com/register', {
                     method: 'post',
+                    mode: 'cors',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
                         name: this.inputName,
