@@ -54,7 +54,7 @@ export default {
     methods: {
       async onRegister() {
             if(this.inputPassword === this.confirmPassword) {
-                const res = await fetch('http://localhost:3001/register', {
+                const res = await fetch('https://obscure-wave-22966.herokuapp.com/register', {
                     method: 'post',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
