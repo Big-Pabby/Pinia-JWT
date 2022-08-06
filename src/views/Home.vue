@@ -32,7 +32,7 @@ export default {
 
   methods: {
     async onLogout() {
-      await fetch('http://localhost:3001/logout', {
+      await fetch('https://obscure-wave-22966.herokuapp.com/logout', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           credentials: 'include',
