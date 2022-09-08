@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h2>Logged In, Welcome {{user.user.username}}</h2>
+    <h2>Logged In, Welcome {{user.user.name}}</h2>
     <button class="btn btn-primary" @click="onLogout">Logout</button>
   </div>
   
